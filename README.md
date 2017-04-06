@@ -6,6 +6,11 @@ the most common dreams in each region and then drill down to the individual, per
 Innovators of Boston, are you paying attention? This is the future we - the people of Boston - want 
 you to build.
 
+## word clouds
+![slide 1](mockup/word.mini.png)
+
+![slide 1](mockup/word.zoom.png)
+
 ## mockup
 Default view - mini word maps for each region.
 ![slide 1](mockup/Slide1.png)
