@@ -8,10 +8,10 @@ you to build.
 
 ## mockup
 Default view - mini word maps for each region.
-![alt text](img/Slide1.png)
+![slide 1](mockup/Slide1.png)
 
 Narrow in on a specific region.
-![alt text](img/Slide2.png)
+![slide 2](mockup/Slide2.png)
 
 Click on a word and see individual hopes and dream.s
-![alt text](img/Slide3.png)
+![slide 3](mockup/Slide3.png)
