@@ -3,9 +3,11 @@
 <head>
     <title>cms631: personal stories</title>
     <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+    <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/jquery"></script>
     <script type='text/javascript' src='leaflet/leaflet.js'></script>
+    <script src="thing.js" type="text/javascript"></script>
     <style>
         body {
             overflow: hidden;
@@ -122,19 +124,26 @@
             vm.image_url = "images/Allston.png";
             $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
         });
-        
-        var layer = L.polygon([
-            [42.349454, -71.072434],
-            [42.350848, -71.067107],
-            [42.348876, -71.066509],
-            [42.347717, -71.068304],
-            [42.347975, -71.071689]
-        ]).bindPopup("Back Bay Village").addTo(map);
-        layer.on('click', function(e) {
-            vm.cloudy = true;
-            vm.image_url = "images/BackBayBayVillage.png";
-            $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
-        });
+
+        function onEachFeature(feature, layer) {
+          if (feature.properties && feature.properties.popupContent) {
+            var popupContent = feature.properties.popupContent;
+          }
+
+          layer.bindPopup(popupContent);
+        }
+
+        L.geoJSON([freeBus], {
+
+          style: function (feature) {
+            return feature.properties && feature.properties.style;
+          },
+
+          onEachFeature: onEachFeature,
+
+        }).addTo(map);
+
+
     </script>
 </body>
 </html>
