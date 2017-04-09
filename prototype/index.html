@@ -131,6 +131,11 @@
           }
 
           layer.bindPopup(popupContent);
+          layer.on('click', function(e) {
+              vm.cloudy = true;
+              vm.image_url = "images/"+ popupContent + ".png";
+              $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
+          });
         }
 
         L.geoJSON([freeBus], {
