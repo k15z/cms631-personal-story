@@ -113,17 +113,17 @@
             id: 'mapbox.light'
         }).addTo(map);
 
-        var layer = L.polygon([
-            [42.366602, -71.136327],
-            [42.352776, -71.143966],
-            [42.345989, -71.135211],
-            [42.353157, -71.110664]
-        ]).bindPopup("Allston").addTo(map);
-        layer.on('click', function(e) {
-            vm.cloudy = true;
-            vm.image_url = "images/Allston.png";
-            $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
-        });
+        // var layer = L.polygon([
+        //     [42.366602, -71.136327],
+        //     [42.352776, -71.143966],
+        //     [42.345989, -71.135211],
+        //     [42.353157, -71.110664]
+        // ]).bindPopup("Allston").addTo(map);
+        // layer.on('click', function(e) {
+        //     vm.cloudy = true;
+        //     vm.image_url = "images/Allston.png";
+        //     $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
+        // });
 
         function onEachFeature(feature, layer) {
           if (feature.properties && feature.properties.popupContent) {
