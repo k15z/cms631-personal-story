@@ -76,6 +76,7 @@
         <div id='map' v-bind:class="{ hidden: cloudy }"></div>
         <div id='wordcloud' v-bind:class="{ visible: cloudy }">
             <h1>Here's what other people in this neighborhood are saying:</h1>
+            <p></p>
             <img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-50%); width:640px;"/>
         </div>
     </div>
@@ -102,7 +103,7 @@
             methods: {
                 dosomething: function () {
                     this.cloudy=false;
-                    $("#viewer").attr("src", "/welcome.html");
+                    $("#viewer").attr("src", "welcome.html");
                 }
             }
         })
