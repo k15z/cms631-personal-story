@@ -76,22 +76,32 @@
         <div id='map' v-bind:class="{ hidden: cloudy }"></div>
         <div id='wordcloud' v-bind:class="{ visible: cloudy }">
             <h1>Here's what other people in this neighborhood are saying:</h1>
-            <img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-50%); width:640px;"/>
+            <img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-50%); width:580px;"/>
         </div>
     </div>
     <script>
         var story_urls = [
-            "http://goboston2030.org/mashs-trip/",
-            "http://goboston2030.org/jenns-trip/",
-            "http://goboston2030.org/arinas-trip/",
-            "http://goboston2030.org/marahs-trip-the-reluctant-driver/",
-            "http://goboston2030.org/angelas-trip/",
-            "http://goboston2030.org/matts-trip/",
-            "http://goboston2030.org/victors-trip/",
-            "http://goboston2030.org/jeffreys-trip/",
-            "http://goboston2030.org/brees-trip/",
-            "http://goboston2030.org/juans-trip/"
+            "http://goboston2030.org/mashs-trip/", //Roxbury
+            "http://goboston2030.org/jeffreys-trip/", //Allston
+            "http://goboston2030.org/jenns-trip/", //South End to Brookline, here use Brookline
+            //"http://goboston2030.org/arinas-trip/",
+            "http://goboston2030.org/marahs-trip-the-reluctant-driver/", //Dorchester to Roxbury, here use Dorchester
+            "http://goboston2030.org/angelas-trip/", //Jamaica Plain to Mission Hill, here use Jamaica Plain
+            "http://goboston2030.org/matts-trip/", //North End
+            "http://goboston2030.org/victors-trip/", //East Boston to Fenway, here use East Boston
+            "http://goboston2030.org/brees-trip/", //West Roxbury to Fenway, here sue Fenway
+            "http://goboston2030.org/juans-trip/" //Cambridge to Roxbury, here use Roxbury
         ];
+        var loc = ["Roxbury", "Allston", "Brookline", "Dorchester", "Jamaica Plain", "North End", "East Boston", "Fenway", "Roxbury"]
+        var people = ["Mash", "Jeffrey", "Jenn", "Marah", "Angela", "Matt", "Victor", "Bree", "Juan"];
+        var keywords = [["parking", "walking", "stops", "butterfly", "line"],
+                        ["phones", "signal", "time", "design", "avenues"],
+                        ["biking", "routes", "streets", "public transportation", "separated"],
+                        ["hours", "reserved spots", "copenhagen", "rhode", "kingston"],
+                        ["biking", "drivers", "lanes", "parking", "cycling"],
+                        ["streets", "hubway bike", "parking", "commute", "cars"],
+                        ["trips", "services", "vans", "improving", "ferries"],
+                        ["bus", "walking", "line", "hill", "option"]];
 
         var vm = new Vue({
             el: "#view",
@@ -134,7 +144,7 @@
           layer.on('click', function(e) {
               vm.cloudy = true;
               vm.image_url = "images/"+ popupContent + ".png";
-              $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
+              $("#viewer").attr("src", story_urls[loc.indexOf(popupContent)]);
           });
         }
 
