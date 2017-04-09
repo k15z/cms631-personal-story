@@ -1,27 +1,20 @@
 import csv
 import string
 import numpy as np
+from glob import glob
 from PIL import Image
 from wordcloud import WordCloud
 from collections import Counter
 
-theme_to_questions = {}
-with open("data/allquestions.csv", "rt", encoding="latin1") as fin:
-    reader = csv.reader(fin)
-    header = next(reader)
-    print(header)
-    for row in reader:
-        if len(row) == 4:
-            _, _, question, theme = row
-            if theme not in theme_to_questions:
-                theme_to_questions[theme] = []
-            theme_to_questions[theme].append(question)
-questions = theme_to_questions["Innovation-Technology"]
+for file in glob("data/*.csv"):
+    questions = []
+    with open(file, "rt", encoding="latin1") as fin:
+        reader = csv.reader(fin)
+        header = next(reader)
+        print(header)
+        for row in reader:
+            questions.append(row[3])
 
-wc = WordCloud(background_color="white", max_words=10)
-wc.generate(" ".join(questions))
-wc.to_file("mockup/word.mini.png")
-
-wc = WordCloud(background_color="white", max_words=100)
-wc.generate(" ".join(questions))
-wc.to_file("mockup/word.zoom.png")
+    wc = WordCloud(background_color="white", max_words=1000, width=1080, height=1080)
+    wc.generate(" ".join(questions))
+    wc.to_file(file.replace("data/", "prototype/images/").replace(".csv", ".png"))
