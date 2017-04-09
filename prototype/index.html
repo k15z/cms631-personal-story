@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cms631: personal stories</title>
+    <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/jquery"></script>
+    <script type='text/javascript' src='leaflet/leaflet.js'></script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        #view {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            bottom: 0;
+            left: 600px;
+
+            transition-property: all;
+            transition-duration: 1.0s;
+        }
+
+        #map.hidden {
+            top: -200%;
+        }
+
+        #iframe {
+            z-index: 1000;
+            background-color: white;
+            position: absolute;
+            top: -220px;
+            left: 0;
+            bottom: 0px;
+            width: 600px;
+        }
+
+        #iframe iframe {
+            width: 100%;
+            height: 115%;
+        }
+
+        #wordcloud {
+            position: absolute;
+            top: 200%;
+            left: 620px;
+            right: 0;
+            height: 100%;
+
+            transition-property: all;
+            transition-duration: 1.0s;
+        }
+
+        #wordcloud.visible {
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="view">
+        <div id="iframe">
+            <button v-if="cloudy" style="position:absolute;top:230px;right:10px;" @click='dosomething'>X</button>
+            <iframe id="viewer" src="welcome.html"></iframe>
+        </div>
+        <div id='map' v-bind:class="{ hidden: cloudy }"></div>
+        <div id='wordcloud' v-bind:class="{ visible: cloudy }">
+            <h1>Here's what other people in this neighborhood are saying:</h1>
+            <img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-50%); width:640px;"/>
+        </div>
+    </div>
+    <script>
+        var story_urls = [
+            "http://goboston2030.org/mashs-trip/",
+            "http://goboston2030.org/jenns-trip/",
+            "http://goboston2030.org/arinas-trip/",
+            "http://goboston2030.org/marahs-trip-the-reluctant-driver/",
+            "http://goboston2030.org/angelas-trip/",
+            "http://goboston2030.org/matts-trip/",
+            "http://goboston2030.org/victors-trip/",
+            "http://goboston2030.org/jeffreys-trip/",
+            "http://goboston2030.org/brees-trip/",
+            "http://goboston2030.org/juans-trip/"
+        ];
+
+        var vm = new Vue({
+            el: "#view",
+            data: {
+                cloudy: false,
+                image_url: "images/allston.png"
+            },
+            methods: {
+                dosomething: function () {
+                    this.cloudy=false;
+                    $("#viewer").attr("src", "/welcome.html");
+                }
+            }
+        })
+
+        var map = L.map('map').setView([42.353157, -71.110664], 13);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            id: 'mapbox.light'
+        }).addTo(map);
+
+        var layer = L.polygon([
+            [42.366602, -71.136327],
+            [42.352776, -71.143966],
+            [42.345989, -71.135211],
+            [42.353157, -71.110664]
+        ]).bindPopup("Allston").addTo(map);
+        layer.on('click', function(e) {
+            vm.cloudy = true;
+            vm.image_url = "images/Allston.png";
+            $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
+        });
+        
+        var layer = L.polygon([
+            [42.349454, -71.072434],
+            [42.350848, -71.067107],
+            [42.348876, -71.066509],
+            [42.347717, -71.068304],
+            [42.347975, -71.071689]
+        ]).bindPopup("Back Bay Village").addTo(map);
+        layer.on('click', function(e) {
+            vm.cloudy = true;
+            vm.image_url = "images/BackBayBayVillage.png";
+            $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
+        });
+    </script>
+</body>
+</html>
