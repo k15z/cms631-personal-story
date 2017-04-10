@@ -76,7 +76,7 @@
         <div id='map' v-bind:class="{ hidden: cloudy }"></div>
         <div id='wordcloud' v-bind:class="{ visible: cloudy }">
             <h1>Here's what other people in this neighborhood are saying:</h1>
-            <img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-50%); width:640px;"/>
+            <img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-40%); width:640px;"/>
         </div>
     </div>
     <script>
@@ -89,7 +89,7 @@
             "http://goboston2030.org/angelas-trip/", //Jamaica Plain to Mission Hill, here use Jamaica Plain
             "http://goboston2030.org/matts-trip/", //North End
             "http://goboston2030.org/victors-trip/", //East Boston to Fenway, here use East Boston
-            "http://goboston2030.org/brees-trip/", //West Roxbury to Fenway, here sue Fenway
+            "http://goboston2030.org/brees-trip/", //West Roxbury to Fenway, here use Fenway
             "http://goboston2030.org/juans-trip/" //Cambridge to Roxbury, here use Roxbury
         ];
         var loc = ["Roxbury", "Allston", "Brookline", "Dorchester", "Jamaica Plain", "North End", "East Boston", "Fenway", "Roxbury"]
@@ -123,22 +123,76 @@
             id: 'mapbox.light'
         }).addTo(map);
 
-        // var layer = L.polygon([
-        //     [42.366602, -71.136327],
-        //     [42.352776, -71.143966],
-        //     [42.345989, -71.135211],
-        //     [42.353157, -71.110664]
-        // ]).bindPopup("Allston").addTo(map);
-        // layer.on('click', function(e) {
-        //     vm.cloudy = true;
-        //     vm.image_url = "images/Allston.png";
-        //     $("#viewer").attr("src", story_urls[parseInt(Math.random()*10)])
-        // });
-
         function onEachFeature(feature, layer) {
           if (feature.properties && feature.properties.popupContent) {
             var popupContent = feature.properties.popupContent;
+
           }
+
+          var AllstonIcon = L.icon({
+        		iconUrl: 'AllstonIcon.jpg',
+        		iconSize: [70, 60],
+        		iconAnchor: [16, 37],
+        		popupAnchor: [0, -28]
+        	});
+
+          var NorthEndIcon = L.icon({
+        		iconUrl: 'NorthEndIcon.jpg',
+        		iconSize: [60, 50],
+        		iconAnchor: [16, 37],
+        		popupAnchor: [0, -28]
+          });
+
+          var BrooklineIcon = L.icon({
+            iconUrl: 'BrooklineIcon.jpg',
+            iconSize: [60, 50],
+            iconAnchor: [16, 37],
+            popupAnchor: [0, -28]
+          });
+
+          var DorchesterIcon = L.icon({
+            iconUrl: 'DorchesterIcon.jpg',
+            iconSize: [75, 65],
+            iconAnchor: [16, 37],
+            popupAnchor: [0, -28]
+          });
+
+          var JamaicaIcon = L.icon({
+            iconUrl: 'JamaicaIcon.jpg',
+            iconSize: [75, 65],
+            iconAnchor: [16, 37],
+            popupAnchor: [0, -28]
+          });
+
+          var RoxburyIcon = L.icon({
+            iconUrl: 'RoxburyIcon.jpg',
+            iconSize: [75, 65],
+            iconAnchor: [16, 37],
+            popupAnchor: [0, -28]
+          });
+
+          var EastBostonIcon = L.icon({
+            iconUrl: 'EastBostonIcon.jpg',
+            iconSize: [75, 65],
+            iconAnchor: [16, 37],
+            popupAnchor: [0, -28]
+          });
+
+          var FenwayIcon = L.icon({
+            iconUrl: 'FenwayIcon.jpg',
+            iconSize: [75, 65],
+            iconAnchor: [16, 37],
+            popupAnchor: [0, -28]
+          });
+
+          var popup1 = L.marker([42.35969, -71.12841], {icon: AllstonIcon}).addTo(map);;
+          var popup2 = L.marker([42.365156, -71.054741], {icon: NorthEndIcon}).addTo(map);;
+          var popup3 = L.marker([42.3441, -71.0957], {icon: FenwayIcon}).addTo(map);;
+          var popup4 = L.marker([42.3145, -71.1209], {icon: JamaicaIcon}).addTo(map);;
+          var popup5 = L.marker([42.3011, -71.0743], {icon: DorchesterIcon}).addTo(map);;
+          var popup6 = L.marker([42.3302, -71.0940], {icon: RoxburyIcon}).addTo(map);;
+          var popup7 = L.marker([42.3302, -71.1514], {icon: BrooklineIcon}).addTo(map);;
+          var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}).addTo(map);;
 
           layer.bindPopup(popupContent);
           layer.on('click', function(e) {
@@ -147,6 +201,7 @@
               $("#viewer").attr("src", story_urls[loc.indexOf(popupContent)]);
           });
         }
+
 
         L.geoJSON([freeBus], {
 
