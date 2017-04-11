@@ -185,14 +185,25 @@
             popupAnchor: [0, -28]
           });
 
+          var RoxWords= L.icon({
+            iconUrl: 'roxburywords.png',
+            iconSize: [75, 65],
+            iconAnchor: [16, 37],
+            popupAnchor: [0, -28]
+          });
+
+
+
           var popup1 = L.marker([42.35969, -71.12841], {icon: AllstonIcon}).addTo(map);;
           var popup2 = L.marker([42.365156, -71.054741], {icon: NorthEndIcon}).addTo(map);;
           var popup3 = L.marker([42.3441, -71.0957], {icon: FenwayIcon}).addTo(map);;
           var popup4 = L.marker([42.3145, -71.1209], {icon: JamaicaIcon}).addTo(map);;
           var popup5 = L.marker([42.3011, -71.0743], {icon: DorchesterIcon}).addTo(map);;
           var popup6 = L.marker([42.3302, -71.0940], {icon: RoxburyIcon}).addTo(map);;
+          var popup61 = L.marker([42.3220, -71.0920], {icon: RoxWords}).addTo(map);;
           var popup7 = L.marker([42.3302, -71.1514], {icon: BrooklineIcon}).addTo(map);;
-          var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}).addTo(map);;
+          var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}). addTo(map);;
+
 
           layer.bindPopup(popupContent);
           layer.on('click', function(e) {
