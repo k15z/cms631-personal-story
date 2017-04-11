@@ -1,0 +1,103 @@
+user_id,question_id,question,theme,create_date,zipcode
+u-0tEhfneKu7-9XJ3vUEXqY,q-XwphCVVoTo-VyJ7Pn7uMJ,Why aren't the unoccupied trains being fixed?,Experiential Quality,2/20/15 21:49,02136
+u-yePotV33Y2-YUEdxNnnEq,q-2hBZCOq4oM-3SAHO1qMuV,"Waiting times too long for #24, 33, 16. Especially the #38 which needs to be serviced on Sundays.",Reliability,3/9/15 12:06,02136
+u-tHZVDYOLa4-VpxjcSsBME,q-wuhiS05chV-roVuHLnKvh,When will the schedules be accurate?  Is there a better GPS app?,Reliability,3/9/15 12:04,02136
+u-o4emKqOETg-hMNamxFzHm,q-s6JhNVYyJO-yZiI7zZAua,Will the bus sizes increase to accommodate greater passenger capacity?,Reliability,1/7/15 10:50,02136
+u-BJoDXygtZu-x4Os3271mk,q-mN0pstRe33-P0nIZRdW9K,Is the bus going to come on time?,Reliability,4/15/15 10:28,02136
+u-ZduACgbo5f-KPwgV5f8EX,q-5j5HDI9rye-Cjqh65MfiY,Will the MBTA have reduced prices for seniors?,Affordability,1/7/15 10:50,02136
+u-zEWAkFuB0P-7a8TUlJJ92,q-3aAv1IzS0X-Elj02GxW6P,Will the fee of transportation be cheaper?,Affordability,4/15/15 11:03,02136
+u-Mc6vkIjyIK-C0mJIkRyfM,q-tBUdP4hYHm-lhfqJjmUPp,Why doesn't the City of Boston and/or the MBTA invest in snow melters like NYC has?,Experiential Quality,3/9/15 12:05,02136
+u-PnfJNYBaVz-DlZgllCUZB,q-gRj9ci8pAM-Iu8W4JfAbD,"When will be be enforcing no idling zones at exterior T stations and commuter rails stations?  It is really unhealthy to have people waiting in cars idling next to the platforms, especially when idling is unnecessary.",Health,2/3/15 15:24,02136
+u-3ZuD9pQJF0-aAzdzrOfub,q-xKuqGf1sOA-Qm3RO6Eo0M,Will they be putting charging ports on the buses so people can charge their devices? ,Innovation-Technology,2/20/15 14:34,02136
+u-kvfaI9TeU7-I3imIQjNE3,q-yZUoClqkEA-0CtiY1ldiu,"Can we get better equipments, new trains?",Experiential Quality,3/9/15 12:55,02136
+u-TC1T4ysryT-YrVdQg9p2Q,q-KrqXbUS2pR-tkiKM3Zz7Z,"Though Boston is a commuter city, why aren't the roads plowed better?",Experiential Quality,3/9/15 12:06,02136
+u-WVbVOZ4yu3-DttK6krqx3,q-rPD4Uvjm4J-DBdKHYPlku,Will they create more commuter rail stations in Hyde Park?,Access,3/9/15 12:04,02136
+u-dxORw9pq0a-fmEyEKLVAk,q-gIY9pqGn9b-5GVV9UxUvi,Can the T be faster?  The buses run kind of late and some drivers don't stop for people most of the time.  ,Safety,3/9/15 12:05,02136
+u-Dwaw5aEBix-pNr3zwmrOJ,q-M1yStLg6cJ-LP5GRHd7Xc,How much will the cost increase? Will it be affordable in the future?,Affordability,3/9/15 12:55,02136
+u-MsTpm6mxtB-tQVVr69QMO,q-eUqKTB7YBB-uXRZtyiNPj,"What is Boston doing to not only create green, eco-friendly energy but make it accessbile to all people in Boston?",Sustainability-Climate,1/7/15 10:50,02136
+u-P4uUiYL6oa-GdF9Ar4AkR,q-64S6iq1gID-yRRZhVVKV5,Will we have more subways?,Access,3/9/15 12:05,02136
+u-4UopZZzRUe-kQqaB7lf9S,q-0gym53ateo-khdfCY93u5,Will you extend the T to Hyde Park and other parts of the city?,Access,3/9/15 12:06,02136
+u-jGcQCZM0n2-SzgXyOyOo7,q-WTnvJs2Odp-kkNOWrbddp,How come I can't get on the bus to make it to school on time?,Reliability,3/9/15 12:06,02136
+u-v9jwrSEPjz-k9npy8ohf5,q-OseTmaa0zH-fTKPQOAIQT,Will there ever be a biking program for youth to promote healthy living and an alternative to taking the MBTA?,Health,1/7/15 10:50,02136
+u-qGGNrwvxlJ-GO9cSDWPH5,q-vef2NfnoMI-JLM7A6CFOd,What are the plans to create a more interactive mobile infrastructure that provides better real time information on the MBTA while allowing T-staff to be better protected throughout their work day?,Innovation-Technology,1/7/15 10:50,02136
+u-UGkQuapFZF-vTdG0eeaZe,q-KokQOIKIQM-sBWc2rvBmC,Will the bus stops be cleared after a major snowstorm in a timely way?,Experiential Quality,3/9/15 12:04,02136
+u-takvuV9pbW-wkSpJrRD0l,q-LKNKggLlgM-RNccRA96XU,Will we have more buses?,Governance and Decision-Making,3/9/15 12:55,02136
+u-UUyYz2mEOn-VkQgbUkAfk,q-fDQLIHrL6V-xrNLcAD0Nx,Can we make the MBTA more dependable and not raise the prices?,Affordability,1/7/15 10:50,02136
+u-DeOTUsWcWV-T0x6VAHLIk,q-Q0CxS3lW8e-QSey3JQi4r,Will the price of public transportation continue to increase?,Affordability,1/7/15 10:50,02136
+u-DBOZRgIAV9-jm2Im7AVV7,q-MlNwjiqXrx-CkcOmrATX9,Why doesn't the Orange Line go out to Hyde Park?,Access,1/7/15 10:50,02136
+u-tFTrJyLhRr-1Jxzr94RpX,q-952rrlhjm2-68BAQcqGZ5,Will everyone be able to get their own personal driver?,Equity,4/15/15 11:04,02136
+u-09SYtWseKw-So3fXPI7to,q-LpUXFBMvFv-Zxz3IL7WSX,"Will the city do an assesment of the ""No Turn on Red"" signs through out the city? Some are unnecessary. ",Governance and Decision-Making,1/7/15 10:50,02136
+u-DHV5Q9vrIj-cs3AEvgIMH,q-yowYOmJqJk-GopZJTRGxd,How will the seniors navigate the transportation system? ,Access,1/7/15 10:50,02136
+u-374qsIexpB-bvufxWP4x1,q-dyH2YObyOB-BHLMF3Co2f,Will traffic get any better during winter commutes?,Reliability,2/20/15 15:32,02136
+u-bVj0RP0VYn-RFUALjWdBZ,q-APzYvSWmUM-vZVPy0KPd5,"To encourage ridership, why doesn't the MBTA reduce fares, increase the number of bus routes, and the frequency of service during the day?",Reliability,2/16/15 16:15,02136
+u-HAzhF2dyo4-ftzbqT9hUk,q-AKUFZzMO3I-wHLCNWaEJO,Will there be delivery services for different goods like cigarettes?,Miscellaneous,3/9/15 12:05,02136
+u-DKAzSWd6EN-4dISvyq4mr,q-iE7fWVMrMm-CwnEqP1kAr,Can we have more water ferry services to towns that can utilize it? ,Access,2/20/15 14:12,02136
+u-6BEdg4nGqt-78LsD0hbpa,q-VHUnhyCsvU-bjJHRq3eb0,When will it be less cold waiting for the bus?,Experiential Quality,3/9/15 12:05,02136
+u-2dTMBlRaHK-WR3legy6ux,q-G5tHAgnP4j-84VvIMpuIx,Will transportation by trains become more efficient?,Reliability,4/15/15 11:07,02136
+u-K8XRygwPQu-icudBOhCIr,q-R89bsdRWMf-Buit1RVr77,"As Bostonians age, what will be done to insure that there is safe, affordable, and convenient transportation for seniors?",Affordability,1/20/15 7:41,02136
+u-sBgUNQpFsd-tez7JAVok5,q-D8FMXMirp5-d1B3kDPsKe,Can there be more frequent weekend buses in my area?,Reliability,3/9/15 12:04,02136
+u-Uqvj7FmVrp-wnwXzhemV7,q-TdPf1j5LWZ-QdklYiOnZk,How will biking be made safer?,Safety,2/2/15 10:17,02136
+u-DA6sy7Tpwf-TwXf2B2Qac,q-Rdgy0oDEh4-E8K2mIBtkz,How are we addressing the impact of the rising sea level as well as climate change weather event on the Boston Downtown and Seaport District T lines?,Sustainability-Climate,2/3/15 15:28,02136
+u-l9bOq9LuYq-3Wolpq4KIp,q-GDQlcOO2Su-b8aAPASFNX,Will the MBTA improve the speed of trains and buses?,Reliability,3/9/15 12:06,02136
+u-n3e8RdCSjy-3OOqr2ek3o,q-DxJRNIZbBQ-XTJTcXKBL5,"Will there be extended hours of operation for the T? Will there be parking areas for people who want to drive and park, then take public transportation?  ",Reliability,1/7/15 10:50,02136
+u-OsWQLMLeFu-YUdYwwQlxI,q-npjVe98k5h-7buU4PyFcn,How will the city secure safe pedestrian travel on all sidewalks within the city during all seasons of the year?,Safety,3/9/15 12:47,02136
+u-WVuOd1Yzrh-fbKIesTLZD,q-5yENoY0hNy-cH6CYNEBaA,What if there were bike lanes on every Main Street? Or if the sidewalks were unbroken?,Access,1/14/15 9:22,02136
+u-Ru0E9LZp10-2nrQvb0RxG,q-buHYdjQNVh-aKf9njyH8I,Are buses going to run by their actual schedules?,Reliability,2/20/15 21:44,02136
+u-avmjguzoYH-yiZmy8nni9,q-eJ180WC3mX-jIKxKPpOC7,how in the future will they provide more service for commuters when snow storms and blizzards happen again?,Resiliency,2/20/15 20:08,02136
+u-MvtpzcW4Iy-rlh2EslRKa,q-qYMJ8mQXK3-THOffWBw1t,Will the MBTA improve bus lines?,Governance and Decision-Making,1/7/15 10:50,02136
+u-rVh1pPNrHg-8G7legvrFW,q-JxVA0sKJe9-HXRVAYyM0R,"Will there be more train stations in outer-Boston neighborhoods, i.e. Roslindale/Hyde Park/West Roxbury?",Access,2/20/15 21:13,02136
+u-FVsJSa6b0W-bAj3JXApxG,q-N5IEDdInQM-k6XuUHivks,They need to make the buses more frequent because some buses you have to wait half an hour or the bus will shut down early.,Reliability,3/9/15 12:55,02136
+u-OTDlMaemn8-tP3sCQ6RDO,q-kyqR2nWAGp-bPHHDcIkxP,How will the MBTA improve during bad weather?,Resiliency,4/15/15 9:59,02136
+u-zpYRgoa8QR-eaH07TdTeh,q-VsNZGf3agV-E93tk83tev,Why shouldn't we have to pay for resident parking stickers like other cities?,Governance and Decision-Making,3/9/15 12:18,02136
+u-QdV30ycmXK-QU4LAXo1za,q-wb6hQkjmTW-dIfRa2WEvU,We will travel in flying cars.  ,Innovation-Technology,3/9/15 12:56,02136
+u-gsPxYK95PT-PyvBEc3IH1,q-KmmBswOAG4-Qze55jEuZP,How do we make buses safer for the drivers?  More police to ride buses on bad routes.  Better lighting at bus stops.  ,Safety,3/9/15 12:04,02136
+u-H5hvwl8Sgr-2djCs5gehD,q-QyCgKMFXwd-5UNGOt6Hee, Is there a more efficient way to run non prime time routes?,Reliability,4/17/15 17:02,02136
+u-C1Koq2wVsR-uNwQakdJQb,q-Xo89PegqNH-RtRivbkJQq,"Oakland airport has self driving cars, will Logan get that technology?",Innovation-Technology,1/30/15 12:06,02136
+u-s397rVHizX-D3iNVqZKk2,q-2r9erKKQnZ-DPiRege6Ax,When will the Fairmount Commuter Rail line run more frequently?,Reliability,2/20/15 20:52,02136
+u-RWfdOMhOaZ-YFHPY7jpZx,q-qYz9gV8Civ-B7920Smq3N,Why don't they make new trains?,Innovation-Technology,3/9/15 12:06,02136
+u-yVIGYJEOpH-6kOZUu4IyR,q-rO2Jwzcp09-o5n197gerR,Are the times that are set for when the trains are supposed to be coming going to actually be accurate?,Reliability,3/9/15 12:55,02136
+u-eD9k5uCDsm-MWkHEZpxBd,q-IGuzARYj75-kkfnIVhTrT,Are we going to have more buses?,Access,4/15/15 10:30,02136
+u-L4HytiB4Ng-80czvDciEU,q-jqBF1oGn0C-0ilgJMgJ9O,How will we enhance our current transportation system?,Innovation-Technology,1/7/15 10:50,02136
+u-Eh4n0BF6zM-eJHIjANtY3,q-xCH9tZ2i5j-QCjDdhpUmo,What if everyone had a bicycle to get around?,Access,3/9/15 12:16,02136
+u-osMnVzbTJI-PdcPZNCHM8,q-8c2qnnJL6Q-nQU6ckEAnj,What kind of investment is needed to make transportation more equitable throughout the city?,Equity,3/9/15 12:06,02136
+u-BrhpNjHgFr-gcT7hiJLt1,q-EXoUNiyTHl-nLgWmaygbq,Will urban communities have better access to transportation? More trains better schedules. ,Equity,3/9/15 12:55,02136
+u-XOPwlNBV8r-ejPcjH5MOe,q-qJDbjOtTt3-bwKgVAmR7Y,"How can bus drivers be better trained to pay attention, not stop to talk to other bus drivers, and get riders to their destination on time?",Safety,3/9/15 12:05,02136
+u-bVj0RP0VYn-RFUALjWdBZ,q-es4CPjGfyl-IG8DexR31P,"Can the MBTA increase/improve bus service within Hyde Park so it is faster and easier to get from one section of Hyde Park to another, and from all sections to Cleary/Logan Square?",Reliability,2/16/15 16:06,02136
+u-WVuOd1Yzrh-fbKIesTLZD,q-YoV088kK3v-Jmr7QBxInv,"Bikers aren't allowed on the trains during rush hour, what are we supposed to do? ",Access,1/14/15 9:31,02136
+u-FNFjpmVQUs-6YQc3uztwG,q-Jl5jE6v9Rh-Qsy9MfjaOW,What will power vehicles?,Innovation-Technology,1/26/15 6:47,02136
+u-hmBbeDFYmL-qfNFneAqsQ,q-SMDZE6TFhL-LC2Jpw0PB7,Can bus stops be heated?,Experiential Quality,3/9/15 12:05,02136
+u-tBEK7fpYlm-GTklJpB1I6,q-8ieqBnzq82-JkmscqwUqm,"Could we have WiFi available on all subway trains, trolleys, and buses?  ",Innovation-Technology,1/22/15 10:42,02136
+u-13UtKKenvP-tzHwY8aUy6,q-BUSiMnAHUL-zX3fRQVcac,Will the #40 bus ever run more frequently?,Reliability,2/11/15 21:02,02136
+u-wnZlepW80r-CGJm3DPJVD,q-5UhcoQkHoJ-QWVPwszitF,Will there be flying cars in the future?,Innovation-Technology,3/9/15 12:05,02136
+u-DSDViv6dsj-fzxwFLBPR7,q-wgNfp0qUrf-EFJbwr1tFH,Will there be a smaller wait time?,Reliability,4/15/15 11:26,02136
+u-pSRBeGJk32-xe7O8DkWRS,q-txES6EOXVK-g1dlbyqtX9,Will the T be affordable?,Affordability,3/9/15 12:05,02136
+u-iKT4ggPCTH-lNgj8akA9j,q-fRjZB4o39m-ikNx8aErhR,"Will the buses run 24/7 like in NYC, like they said?",Reliability,3/9/15 12:04,02136
+u-4baTJjHuDd-5h3LK3n4jM,q-Y8pFUhBC1t-GP9H4defzF,"Will the trains, buses etc. actually operate?",Reliability,2/20/15 17:52,02136
+u-zilGHjGOc3-bzYu5pKOtZ,q-y196Qy5hCo-HvfWIjS9D9,Why don't drivers always yield to pedestrians in crosswalks ?,Safety,1/29/15 12:26,02136
+u-CuXUBp0F71-3Rw7U0x3EP,q-ioYcSWW9jW-nMsaCqN6iH,Could they make it easier for high school kids?,Affordability,3/9/15 12:06,02136
+u-JVvzECyBqd-05CQk4PCgK,q-7UouD1dPY0-7L5AN0E7a2,Why do the fares keep going up for the MBTA?,Affordability,3/9/15 12:04,02136
+u-x0ZLKYsHEs-jPzgeYOQfQ,q-ZrIhUfwDvx-XjvYYTE2ck,How will we make the MBTA safer for our growing younger population who will be taking the T?,Safety,1/7/15 10:50,02136
+u-oEjMJUcspk-A2t9hvSrv9,q-eRkytCNTj7-PMPeTMVKX5,Will our roads be solar powered?,Innovation-Technology,3/9/15 12:55,02136
+u-2gRJeGLhc9-9oRkEGRvo4,q-LYZapZ70BF-DScmQAVHKJ,Will the MBTA bring back the dedicated buses for middle and highschool students?,Access,1/7/15 10:50,02136
+u-UV6T5RqFrN-lWrW6uVc3f,q-pXJZSeWMqQ-TXrkgiPyTk,How can we get our stop lights to be in sync to increase traffic flow?,Reliability,3/9/15 12:55,02136
+u-D6Ov6YUJjM-TP8koC8jbg,q-l8rvxXbPsZ-ODmbvxj7XD,Will the T expand evening hours for both trains and buses?,Reliability,3/9/15 12:06,02136
+u-P3J5lesYpk-9xtAwlNN6L,q-tHOzfuHEcK-63SPAZ7kja,Can the MBTA plan for bad weather and prep buses for it?,Resiliency,1/7/15 10:50,02136
+u-4Z5l6P9DDi-Uco9CBhkYl,q-gq4GBsTAge-JO5MXokEoz, Why can't the Orange Line extend to Hyde Park?,Access,4/17/15 17:02,02136
+u-ga1cxysZ7s-9h3uluUGyk,q-NVU9hu2fHT-z3ry2B79p5,What is being done to make MBTA stations safer for travelers?,Safety,1/7/15 10:50,02136
+u-2dTMBlRaHK-WR3legy6ux,q-d1kuD9ccmF-E2zAXfRmNd,Can we move the trains into the sky?,Innovation-Technology,4/15/15 11:08,02136
+u-OEPTeOB0SG-0qkZxGFfRt,q-MUJiC3dZKv-tMA2OKGC6e,Will the #40 bus ever run on time?  ,Reliability,3/9/15 12:04,02136
+u-JvVjS9YuaN-OLNm61MIvk,q-nPTatuetrA-Am7fg1qi3i,How do we create bike paths that do not impact the how of traffic?,Innovation-Technology,3/9/15 12:55,02136
+u-tBEK7fpYlm-GTklJpB1I6,q-8xjzprxdR7-L7xl7mSArA,"Could we have a public Segway program, similar to the current Hubway bike program, where folks could use Segways to get around?  Not everyone is fit enough to ride a bike, and Segways are a lot easier.",Innovation-Technology,1/22/15 10:40,02136
+u-fkmnrpWsm5-BaFQVnUcjk,q-ijP3jYasXT-dcMHrNb8uf,Will there be flying cars ever?,Innovation-Technology,4/15/15 11:02,02136
+u-5ZSoxJ19w1-CDOfY3e24P,q-77GmtY6GmD-Qnhq1t0z1x,Are the MBTA changing the bus since the current ones are always packed?,Experiential Quality,3/9/15 12:55,02136
+u-FNFjpmVQUs-6YQc3uztwG,q-9qE2mpgt61-aU7GS3o21u,"Will all citizens need ironman like suits, to reduce transportation need?",Innovation-Technology,1/26/15 6:56,02136
+u-e5KVI27qSe-IuKG3WEy3t,q-BDM5zXMsp4-1cgYCIwSqp,How should we deal with population growth and road infrastructure?,Resiliency,3/9/15 12:04,02136
+u-Csv75Ti2AJ-2eShszj9Hc,q-CcNpNgQwS5-koV67iSLsF,When will bus 32 be more accessible for people living in the Wilcott area?,Access,1/7/15 10:50,02136
+u-WVuOd1Yzrh-fbKIesTLZD,q-MiSJxYogwq-YHOaIdq3aH,What can you do about the smell in the Forest Hills trains during the rush hour?,Experiential Quality,1/14/15 9:29,02136
+u-baJbEHhTdy-GLwpQ0VWaK,q-tmNvGNwMFM-p80bitS4bK,How should we protect the city?,Resiliency,3/9/15 12:06,02136
+u-KF5mXGqAjN-JKB3jCilgH,q-MsE5lwNvQJ-aUB8j6N0IL,Why is the Fairmount train/commuter rail canceled all the time? The 5:45 Fairmount train has been canceled 4 times the week of 1/26/15 - 1/30/15 from South Station.,Reliability,3/9/15 12:17,02136
+u-pLMIEWW3JN-otBKFJhdm3,q-GiKwFthzX3-LIrvjeVPH3,Will there be direct subways to every college in Boston?,Access,1/7/15 10:50,02136
+u-5f9y7mXPRT-FRbWrNOXUf,q-AhV9Hf0JFa-rAi41XfZGD,How could you make it warmer for those taking the MBTA during the winter?,Experiential Quality,1/30/15 12:06,02136
+u-bVj0RP0VYn-RFUALjWdBZ,q-1zgcQj4mjX-iHI1eITEPZ,"To get from neighborhoods to Logan Airport can we create a service that is faster and more convenient than a combination of buses and subways, but more affordable than limo service?  ",Access,2/16/15 16:19,02136
+u-MPdIt396pQ-MsIMbkO0kz,q-hOGRBWmbtn-YmlOBC0bbH,Can we have a safe ride on the bus when others are unruly?,Safety,3/9/15 12:18,02136
+u-X63CN9BATA-pEfJHQcxCe,q-25fGhNJemq-PYo6bQcyXS,Will there be parking areas for people who want to drive and park and take public transportation elsewhere?,Access,1/7/15 10:50,02136

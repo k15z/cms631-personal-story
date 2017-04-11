@@ -1,0 +1,79 @@
+user_id,question_id,question,theme,create_date,zipcode
+u-fnJie9005w-fRBbGiZXEO,q-lLeEWterPO-G3dA5YW4X8,When will the city invest in cross town buses?,Access,1/7/15 10:50,2132
+u-q0I1BQDpmX-Mukxzwn3As,q-CwbQqQVhT1-JQGVPXvENc,How will visitors be able to find safe and affordable parking?,Affordability,1/7/15 10:50,2132
+u-dlHpqScIk0-bD9K1a6wt6,q-ophAFsPdPz-9V5ziEhUsB,How clean and fast will transportation be?,Reliability,1/7/15 10:50,2132
+u-UTa93reH7h-Mm0ZCiCWJp,q-0Ru1sW8nyQ-3NZC479YnN,Will we still be dependent on fossil fuels?,Sustainability-Climate,1/7/15 10:50,2132
+u-RAAa20RjTA-COU5kcmDWY,q-9mZh66X4mU-jot1CuRT5K,Why do the prices keep going up?,Affordability,1/7/15 10:50,2132
+u-uPWiz5PkUO-lHwhmEBXHr,q-4Ytv7qHa6s-ZawGe5QIqI,Why do I have to resort to driving my car if I want to make a 20 mile trip across town from West Roxbury to Brighton?,Access,1/7/15 10:50,2132
+u-esevLphp6p-ChX0prcc1K,q-EhxSDCMV4X-TU4tcluA0W,Last year I heard about a start up called Solar Roadways (info @ solarroadways.com) I would love to see something like this in Boston even if it's small scale at first. Is this possible for us Bostonians?,Innovation-Technology,1/15/15 16:28,2132
+u-Tf7gd6en06-QndGkmZAkN,q-gONAYfNZYP-xny6CaYsC7,Can bicycle lanes be installed on the Boston Common?,Access,1/20/15 10:39,2132
+u-Tf7gd6en06-QndGkmZAkN,q-OvUnDrMmkV-61Ye7NqOJQ,How many gallons of gas from idling cars would be saved if the traffic lights did not run on timers but had sensors that detect where the traffic was and what the most efficient cycle would be depending on the time of day and traffic patterns?,Innovation-Technology,1/20/15 10:42,2132
+u-Tf7gd6en06-QndGkmZAkN,q-ggVOrjYe0V-EKWgtWy4Mj,What is the purpose of those traffic lights on Center Street near the Arboretum Rotary that appear only to annoy?,Governance and Decision-Making,1/20/15 10:44,2132
+u-IxcJp3N9pj-y6OsPOvIzT,q-6eh5tFjqJr-wIkoqSiewn,"When will neighborhood commercial centers such as Roslidale Square, Cleary Square and JP Center begin to offer electrical car charging stations?",Innovation-Technology,1/22/15 14:26,2132
+u-dsW12O6b6V-otOReNrzfQ,q-v7rWk2o4y2-Ye8bjUt7h4,Is there a way to install sensors or the like at cross walks? That way when people press the walk signal and cross the street anyway people don't have to sit in the cars at a red light for no reason.,Innovation-Technology,1/22/15 23:24,2132
+u-Jq9dqJgGW7-qWZeNaT5Xv,q-LdRWY2Oixf-Pg3ESkvlsU,How do we plan on accommodate the rapid growth of Boston's population with effective public transportation?,Access,1/29/15 13:00,2132
+u-oNqny9qgrc-kQ8M7m7Tqo,q-CQLrznLNd5-PuguCbNee2,Can Boston make the subway lines more reliable and less likely to break down?,Reliability,2/4/15 15:40,2132
+u-oNqny9qgrc-kQ8M7m7Tqo,q-xC6QcKvqOs-R60hjRjBar,Is there a better way to let people know what commuter rail train is entering Ruggles station?  Currently passengers have to ask a conductor what train they are boarding which can be difficult at crowded times.,Innovation-Technology,2/4/15 15:52,2132
+u-Ms7sL8ow8v-eqPR6Qyrbc,q-ctrwSBgrNk-wTnVkGcmzo,How can we bring weekend train service to West Roxbury?,Reliability,2/4/15 21:05,2132
+u-EqVpbZi6RL-wvmlCXF1Ey,q-S0ImuGp6GP-T11G8XPlpF,How can I use the Charles River to get from West Roxbury to Harvard Square?,Access,2/4/15 21:21,2132
+u-EqVpbZi6RL-wvmlCXF1Ey,q-tKDgeszVhc-bO1BVzcQJ2,Can we make a loop from West Roxbury to Coolidge Corner to Harvard Square?,Access,2/4/15 21:23,2132
+u-EqVpbZi6RL-wvmlCXF1Ey,q-7NHBolPWMM-pkmLv1F6e8,Can we get Sunday commuter rail service on the Needham line?,Reliability,2/4/15 21:24,2132
+u-EqVpbZi6RL-wvmlCXF1Ey,q-xervR8ySDI-VYgs9wSzgW,Can we get the Orange line extended to West Roxbury?,Access,2/4/15 21:24,2132
+u-CHCBCF218X-fxfp1HzPvT,q-eouBmiRtan-0wrWvIGnOZ,Will The Ride be available for more elderly and disabled people at an affordable price in the future?,Affordability,2/5/15 16:14,2132
+u-8sEiIMgVUf-lkoEEwZRiH,q-RTnJzEiwwn-PfVctsuiH0,"Will the MBTA offer free T passes to the disabled and elderly who do not need The Ride, but cannot afford a monthly T pass?",Affordability,2/5/15 16:16,2132
+u-IccjoI6lTs-Hirx8egqPM,q-o1rWV1ghq9-gqvcpNeX7Q,When will the T bring back the pilot program that offered free T passes for disabled and elderly people and a buddy?,Affordability,2/5/15 16:16,2132
+u-WF5ctElGgJ-i4Gghpkkvz,q-Iqc8F0kAjw-3bzJyGzJrW,Will/does/should the Boston Redevelopment Authority talk to the Boston Transportation Department when revising master plans by neighborhood or site by site development? Traffic is too congested.,Governance and Decision-Making,2/5/15 16:16,2132
+u-7XurdSUyCq-eXusLjAH4p,q-PVW9zUMD60-pEEIxwMiMv,"Will there ever be a revamp/extension of reliable systems like high speed trains and such (subways, not like the Green Line)?  This includes ripping out old services and expanding services.",Reliability,2/7/15 16:23,2132
+u-5RWUg3CWsU-hrBcmCeIiG,q-1cqgaxIMzX-dL9ceIrzhI,I would like to know whether plans will be made for commuter rail to run into downtown Boston along the various lines on weekends. Why not stimulate economic growth downtown while also alleviating congestion on the weekends by offering hourly commuter rail service? Thank you. ,Reliability,2/8/15 10:11,2132
+u-5RWUg3CWsU-hrBcmCeIiG,q-XnShTkUSgc-Cm3LFT0MWB,Currently travel between communities such as West Roxbury  or Hyde Park and Newton requires either numerous bus changes or going all the way down town before switching out to  new line. What about offering lines that run north-south up and down the western end of the city/ interior suburbs?,Access,2/8/15 10:12,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-VU4v4fkfnV-UNX5RgiTgj,How can we make it so anyone can get between any two points in the city within 45 minutes without a car?,Access,2/10/15 14:41,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-Yb71JHXgV4-2D6VdE5mbe,How can we make it safe for people to commute to work by bike?,Safety,2/10/15 14:42,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-4mPf0565Ik-3ketxzTtbs,Will it be possible for someone from West Roxbury to take public transit and get downtown in under an hour on typical routes? Under 30 minutes?,Access,2/10/15 14:50,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-T1DYyv6uGU-m83oZ2FmXe,Could we have car free streets that were bike and pedestrian only?,Access,2/10/15 15:11,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-KHtNC9vJL6-aDXWb6CSgP,"Can our neighborhood streets give priority to pedestrians and bikes, where cars have to travel at walking speeds like they do in the Netherlands: http://en.wikipedia.org/wiki/Woonerf",Health,2/10/15 15:27,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-EGtugEpTAa-EkRgGUjReW,"Should we fund this by switching from a Property Tax to a Land Value Tax, which doesn't go up if someone makes improvements to their property, but does go up if the city makes major investments in a local neighborhood?",Governance and Decision-Making,2/11/15 7:33,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-wBHWxPpS7d-jDP6lkQcMJ,Can we make is more accessible to take bicycles on our public transit systems so that these systems can still be used when they don't go all the way to the destination?,Access,2/11/15 7:35,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-81k5LiJaBb-RxewRUNraT,"Should there be a toll for driving into Boston, to discourage congestion and fund a better transit system?",Sustainability-Climate,2/11/15 7:47,2132
+u-N35MrZvl0d-2ziBBd8BUw,q-xIJ5F09ArN-C6RQBM7Usr,"Could we run a smaller, lighter T like train on the Needham commuter rail track with more frequent and night/weekend service?",Reliability,2/11/15 8:07,2132
+u-TCDBLz35ad-tMsv3AXmXS,q-lAXtQcUEEk-m3llMT6RIX,Will prices keep increasing?,Affordability,2/11/15 20:33,2132
+u-OQ6CxgJncE-YvJkz7Wc7B,q-fsTl50WgcU-BmkVEJV2lN,Can we install electric school buses to save energy?,Sustainability-Climate,2/13/15 10:47,2132
+u-H2ZgtIjaY8-ahBm0d9ln7,q-GZMxk5Om17-qHpCGhIl5p,Will public transportation create a system for seniors only? ,Equity,2/20/15 14:08,2132
+u-uSeZZxkddB-8U9nCePKpV,q-MM5fxdLICj-I0qi1Ts3T0,Will they shovel out the bus stops in the future winters? ,Experiential Quality,2/20/15 14:10,2132
+u-sFsxFqXNZ1-LQVCmcTxxs,q-kP3Lx3XKlJ-lS5Aza7JCH,Will there be less gun violence at stations? ,Safety,2/20/15 14:14,2132
+u-lFi9RoQlqB-KF5PuVQvL0,q-AVryFudfCF-CyszTyPmfF,Are you planning to improve the bus services for the W.R Area? The bus #35 schedule is very unreliable. ,Reliability,2/20/15 14:19,2132
+u-oNwiGvrdAF-JQtTQTqrbr,q-Osna3OfRav-XtbLM07ntP,Would you ever consider talking to the Town of Norwood about their snow removal? They do a fantastic job-may want to duplicate ,Experiential Quality,2/20/15 14:28,2132
+u-bUvU1RX3Gs-035vckCNWa,q-Dr3B4eYjps-B4Gsg0Dbba,Will the Orange Line ever come to West Roxbury?,Access,2/20/15 14:30,2132
+u-A0tTm6oQNm-8zU4a8RHhP,q-7lvxJfOflb-BAiDcH5gqA,How will transportation be improved in the following years in order to shorten delays in the commute?,Experiential Quality,2/20/15 15:30,2132
+u-1G0g7WUlTR-fOOOMgP2BK,q-5wdiHK2Lr5-0i2EpEOBCb,Will there be more buses on the road for routes? ,Access,2/20/15 15:31,2132
+u-1Ur5VxwAqo-io27GyiWl9,q-gOoGQj0SVI-1NWyx760Qa,"Make the MBTA more reliable, reduce orange line standbys ",Reliability,2/20/15 15:36,2132
+u-ok0AaJqfow-riL3K9GTDN,q-BU2Ew95mPU-aJ1w8kVQ82,"How can we make the ""T"" more friendly to seniors?",Access,2/20/15 15:39,2132
+u-aHnLDoNQIP-vW5FaahPBz,q-2nRcbe7Xnq-UFT5B7zmMg,Will there be a time when the Needham Commuter rail line is 7 days a week? That would be great ,Reliability,2/20/15 15:42,2132
+u-RpfxE9sgIx-JX7cFR1iNP,q-bvc8J7yTKy-awLW8i8Dgf,"1. How will the MBTA try and improve the service for future snow storms? 2. When the MBTA raises prices where does our money go to?""",Experiential Quality,2/20/15 20:11,2132
+u-DqIp7Vdqgv-H9tVRjyRbJ,q-zmLqt2mFhV-rt4P0BonT2,Will there be a time when the Needham Commuter Rail line is seven days a week?,Reliability,2/20/15 20:34,2132
+u-Cy3Mjgs9Ae-Or22YLpC9p,q-JlNpbG3wj4-SmAkeWA6L2,What can be done to make sure the trains are being maintained?,Safety,3/9/15 12:04,2132
+u-TpuvEi2qH3-12BSvsAuo1,q-HBm3roVrIY-yvnTw0tzj3,How do I get from West Roxbury to Jamaica Plain easily and quickly?,Access,3/9/15 12:05,2132
+u-1vgE6Gpig8-wrSGcj3hjW,q-bkzqXYoGoB-eTDsqsoFav,How can I feel safer around Forest Hills?,Safety,3/9/15 12:05,2132
+u-9Xq1nWyjl4-6yheVGCROh,q-bReWRV6S84-OU2k4uESo1,Who is really making these decisions about transportation (or any large decisions about how we live)?,Governance and Decision-Making,3/9/15 12:05,2132
+u-36daymGXdI-qDvMs0Y3Kv,q-gwDNoCKjc0-tTXzLAmkm0,How can we make it safer for bikes?,Safety,3/9/15 12:06,2132
+u-F7L8rd6cc1-oQSq5d3bRh,q-xsxgq33MME-0EUM1zPGmz,Why is there no increased security in older MBTA stops?,Safety,3/9/15 12:06,2132
+u-qfKdVBS8kN-EfnpjNDKSy,q-rMdAtF1GY6-IEgsOLYcML,How can drivers become more aware of pedestrians?,Safety,3/9/15 12:06,2132
+u-gXecwLs6KX-9Q1QXmq9jM,q-ZfzTcJRliT-yDu04BZ6ud,What could we do to end texting while driving?,Safety,3/9/15 12:06,2132
+u-hTyOj5Aifc-WTp4uQR5Ee,q-iUVmcTyjMS-6wDzZImBKp,"The back of the buses are leaking at the rear windows, which makes more people stand in the aisles.  ",Experiential Quality,3/9/15 12:18,2132
+u-4owUgnBGgY-s5ZoWgsXA3,q-S4hIQ1a0D8-PDJXAFGpdJ,The #32 bus route needs a bus run like the #39 bus route - bigger/double buses.  The #34E bus 10 - 11 pm doesn't come.  ,Reliability,3/9/15 12:18,2132
+u-JFgrHcd5q5-yhOV0gyjwh,q-NnsOh2ZwQ6-QCLdEfvtiv,"Bus drivers act like taxis, by not pulling to the side of the street - they do it because of the GPS system and if they fall behind in time, it is bad for their work file.  Respect riders!  Bus drivers are not police, so no touching riders!  On Mass Ave last year, I witnessed an MBTA worker almost push something/someone downstairs.  Bus drivers are not saints, so no touching them is fine until they touch!   In the past few years, I've noticed most MBTA workers hate or do not enjoy their jobs.  ",Safety,3/9/15 12:18,2132
+u-8v8BaJH8Pz-MufYopXr6w,q-pnFidMDCKc-1IuetFJdIn,"If the bus is half an hour late, next ride is free?",Affordability,3/9/15 12:18,2132
+u-zjMDnq72Be-59jrVDDoVs,q-Qszi7XM8sd-6EtJJe5Ltw,Make transfers last much longer!,Reliability,3/9/15 12:18,2132
+u-Rjc9yh6K6M-INLcRgy1xI,q-byntTPP5dc-i67YGwOq5F,How can we make the T more affordable?,Affordability,3/9/15 12:18,2132
+u-AWs47IVKOd-0193Qa932D,q-gvWEvhUwZv-6GEtZ34Ez0,Can we have a Dunkin' Donuts at every station?,Experiential Quality,3/9/15 12:47,2132
+u-j8H078bY0g-j1c8ZVkuZI,q-5VIEilGvwW-lAXiDJh9jj,Will there ever be hover boards and neon motorcycles?,Innovation-Technology,3/9/15 12:55,2132
+u-XR0sQiC9zF-PTJrxjQRSH,q-YiqoXFl8oi-5eFldutGnY,Can we make seating more comfortable on the bus/train?,Experiential Quality,3/9/15 12:55,2132
+u-WzDUVY8gco-fMmjlPnENo,q-WS7gtNLc8z-XykPrxnyII,What is the plan to improve/update transportation? Far too many breakdowns and delays. Spend some money to improve/update!,Innovation-Technology,3/9/15 12:55,2132
+u-Bi1B9mTu3U-zLkldMOSF8,q-JrTPWtuAOS-mbkQtpkqf7,Implement emergency rescue in the event of a train breaking down.  ,Reliability,3/9/15 12:55,2132
+u-Yzh0LEEkXt-LpI5p88E8A,q-ju4SrBr3Nj-xaG6aJAzce,Will down escalators ever be implemented?,Access,3/9/15 12:55,2132
+u-2ClZXep5Wn-ZLQ4OeZAUX,q-LbdAf0kwgu-54wtUBRTja,Can we have MBTA cleaners to clean/sanitize the buses and trains?,Experiential Quality,3/9/15 12:55,2132
+u-Dbg3Vlk1Lm-7WVKyQ9wTk,q-hl3LnQoSZu-cWTgp67GPE,Will there be a bullet train?,Innovation-Technology,3/9/15 12:55,2132
+u-ixIlqZMzJo-H7uDR8lw4k,q-1SjgtXtniA-rfqIFN16iR,During snow winter months shovel out bus stops,Experiential Quality,3/9/15 12:55,2132
+u-JQmyjq3Q0A-ZVM1VnjPzg,q-9Abj3yJ8BY-3hEF5WBUx4,More seating in mornings?,Experiential Quality,3/9/15 12:56,2132
+u-86iW9Muh3s-oVFzdqpVaN,q-tmpjdXuXfm-KCHganFUdz,Will there be flying cars in the future?,Innovation-Technology,4/15/15 11:00,2132
+u-e3ITpWt4h0-WBltI86DTm,q-hhkqspDDEe-J2IwSwkVld,"When the MBTA raises prices, where does our money go?",Governance and Decision-Making,4/17/15 17:02,2132
+user_id,question_id,question,theme,create_date,zipcode

@@ -4,6 +4,7 @@
     <title>cms631: personal stories</title>
     <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
     <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/jquery"></script>
     <script type='text/javascript' src='leaflet/leaflet.js'></script>
@@ -65,18 +66,66 @@
         #wordcloud.visible {
             top: 0px;
         }
+        
+        #wordcloud svg{
+            position:absolute;
+            top:70px;
+            left:20px;
+            /*transform: translate(-50%,-50%);*/ 
+            width:1240px;
+            height:640px;
+        }
+        
+        #iframe{
+/*            position:absolute;
+            top:0;*/
+        }
+        
+        #questions{
+            position:absolute;
+            top:210px;
+            left:0px;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+            z-index:99;
+        }
+        
+        #question_title{
+            position:relative;
+            float: left;
+            left: 18px;
+            top: 12px;
+            font-family: Verdana;
+            font-size: 24px;
+        }
+        
+        .filtered_questions{
+            position:relative;
+            float: left;
+            left: 8px;
+            top: 10px;
+            width: 90%;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            font-family: Verdana;
+            background: rgba(156,200,230, 0.7);
+            border-radius: 10px;
+            z-index: 101;
+        }
     </style>
 </head>
 <body>
     <div id="view">
         <div id="iframe">
-            <button v-if="cloudy" style="position:absolute;top:230px;right:10px;" @click='dosomething'>X</button>
+            <button v-if="cloudy" style="position:absolute;top:230px;right:10px;z-index:100;" @click='dosomething'>X</button>
             <iframe id="viewer" src="welcome.html"></iframe>
         </div>
         <div id='map' v-bind:class="{ hidden: cloudy }"></div>
         <div id='wordcloud' v-bind:class="{ visible: cloudy }">
             <h1>Here's what other people in this neighborhood are saying:</h1>
-            <img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-40%); width:640px;"/>
+            <!--<img :src="image_url" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-40%); width:640px;"/>-->
         </div>
     </div>
     <script>
@@ -114,6 +163,9 @@
                 dosomething: function () {
                     this.cloudy=false;
                     $("#viewer").attr("src", "welcome.html");
+                    d3.select("#questions").remove();
+                    d3.select("#question_title").remove();
+                    d3.selectAll(".filtered_questions").remove();
                 }
             }
         })
@@ -150,7 +202,7 @@
             iconAnchor: [16, 37],
             popupAnchor: [0, -28]
           });
-
+//
           var DorchesterIcon = L.icon({
             iconUrl: 'DorchesterIcon.jpg',
             iconSize: [75, 65],
@@ -185,42 +237,167 @@
             iconAnchor: [16, 37],
             popupAnchor: [0, -28]
           });
-
-          var RoxWords= L.icon({
-            iconUrl: 'roxburywords.png',
-            iconSize: [100, 65],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
-
-          var RoxWords= L.icon({
-            iconUrl: 'roxburywords.png',
-            iconSize: [100, 65],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
+//
+//          var RoxWords= L.icon({
+//            iconUrl: 'roxburywords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
 
 
 
 
-          var popup1 = L.marker([42.35969, -71.12841], {icon: AllstonIcon}).addTo(map);;
-          var popup2 = L.marker([42.365156, -71.054741], {icon: NorthEndIcon}).addTo(map);;
-          var popup3 = L.marker([42.3441, -71.0957], {icon: FenwayIcon}).addTo(map);;
-          var popup4 = L.marker([42.3145, -71.1209], {icon: JamaicaIcon}).addTo(map);;
-          var popup5 = L.marker([42.3011, -71.0743], {icon: DorchesterIcon}).addTo(map);;
-          var popup6 = L.marker([42.3302, -71.0940], {icon: RoxburyIcon}).addTo(map);;
-          var popup61 = L.marker([42.3220, -71.0920], {icon: RoxWords}).addTo(map);;
-          var popup7 = L.marker([42.3302, -71.1514], {icon: BrooklineIcon}).addTo(map);;
-          var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}). addTo(map);;
+//          var popup1 = L.marker([42.35969, -71.12841], {icon: AllstonIcon}).addTo(map);
+//          var popup2 = L.marker([42.365156, -71.054741], {icon: NorthEndIcon}).addTo(map);
+//          var popup3 = L.marker([42.3441, -71.0957], {icon: FenwayIcon}).addTo(map);
+//          var popup4 = L.marker([42.3145, -71.1209], {icon: JamaicaIcon}).addTo(map);
+//          var popup5 = L.marker([42.3011, -71.0743], {icon: DorchesterIcon}).addTo(map);
+//          var popup6 = L.marker([42.3302, -71.0940], {icon: RoxburyIcon}).addTo(map);
+//          var popup61 = L.marker([42.3220, -71.0920], {icon: RoxWords}).addTo(map);
+//          var popup7 = L.marker([42.3302, -71.1514], {icon: BrooklineIcon}).addTo(map);
+//          var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}). addTo(map);
 
 
           layer.bindPopup(popupContent);
           layer.on('click', function(e) {
               vm.cloudy = true;
-              vm.image_url = "images/"+ popupContent + ".png";
+//              vm.image_url = "images/"+ popupContent + ".png";
               $("#viewer").attr("src", story_urls[loc.indexOf(popupContent)]);
+              
+              d3.select("#wordcloud").select("svg").remove();
+              var svg = d3.select("#wordcloud").append("svg")
+                    .attr("width", 840)
+                    .attr("height", 640)
+                    .append("g")
+                    .attr("transform", "translate(350,320)");
+              var fill = d3.scale.category20();
+              d3.csv("./GoBoston2030/" + popupContent +".csv", function(data) {
+                var text = "";
+                for(var i = 0; i < data.length; i++){
+                    text += data[i]["question"]; text += " ";
+                    text += data[i]["theme"]; text += " ";
+                }
+              
+//                var words = getWords(text);
+                
+                var words = parseText(text); 
+                var sizeExtent = d3.extent(words, function (node) {
+                    return node.value;
+                });
+                var for_size = d3.scale.linear().range([15, 90]).domain(sizeExtent);
+                d3.layout.cloud().size([840, 640])
+                    .words(words)
+                    .padding(5)
+                    .rotate(function() { return 0; })
+                    .font("Impact")
+                    .fontSize(function(d) { return for_size(d.value); })
+                    .on("end", draw)
+                    .start();
+                function draw(words) {
+                  var cloud = svg.selectAll("g text")
+                                  .data(words, function(d) { return d.key; })
+
+                  //Entering words
+                  cloud.enter()
+                      .append("text")
+                      .style("font-family", "Impact")
+                      .style("fill", function(d, i) { 
+                          if(d.key == "Access" || d.key == "Safety" || d.key == "Reliability" || d.key == "SustainabilityClimate" || d.key == "Equity" || d.key == "Affordability" || d.key == "InnovationTechnology" || d.key == "Miscellaneous"){
+                              return "black";
+                          }
+                          return fill(i); 
+                      })
+                      .attr("text-anchor", "middle")
+                      .attr('font-size', 1)
+                      .style("cursor", "pointer")
+                      .text(function(d) { return d.key; })
+                      .on("mouseover", function(){
+                          d3.select(this).attr("stroke", "black");
+                          d3.select(this).attr("stroke-width", "1px");
+                      })
+                      .on("mouseout", function(){
+                          d3.select(this).attr("stroke", "none");
+                          d3.select(this).attr("stroke-width", "0px");
+                      })
+                      .on("click", function(d){
+                          d3.select("#questions").remove();
+                          d3.select("#question_title").remove();
+                          d3.selectAll(".filtered_questions").remove();
+                          $("#viewer").attr("src", "");
+                          var questions = d3.select("#iframe").append("div").attr("id", "questions");
+                          var filtered_questions = [];
+                          if(d.key == "Access" || d.key == "Safety" || d.key == "Reliability" || d.key == "SustainabilityClimate" || d.key == "Equity" || d.key == "Affordability" || d.key == "InnovationTechnology" || d.key == "Miscellaneous"){
+                              questions.append("p").attr("id", "question_title").html("Questions in <b>" + popupContent + "</b> under theme <b>" + d.key + "</b>");
+                          }
+                          else questions.append("p").attr("id", "question_title").html("Questions in <b>" + popupContent + "</b> containing <b>" + d.key + "</b>");
+                          for(var i = 0; i < data.length; i ++){
+                              if(d.key == "Access" || d.key == "Safety" || d.key == "Reliability" || d.key == "SustainabilityClimate" || d.key == "Equity" || d.key == "Affordability" || d.key == "InnovationTechnology" || d.key == "Miscellaneous"){
+                                  if(data[i]["theme"].indexOf(d.key.substring(0,5)) != -1){ //filtered_questions.push(data[i]["question"]);
+                                    questions.append("div").attr("class", "filtered_questions")
+                                            .text(data[i]["question"]);
+                                  }
+                              }
+                              else{
+                                  if(data[i]["question"].indexOf(d.key) != -1){ //filtered_questions.push(data[i]["question"]);
+                                    questions.append("div").attr("class", "filtered_questions")
+                                            .text(data[i]["question"]);
+                                  }
+                              }
+                          }
+//                          d3.select("#iframe").select("#questions").data(filtered_questions).enter().append("div")
+//                                  .attr("class", "filtered_questions").text(function(d, i){ return d;});
+                      });
+
+                  //Entering and existing words
+                  cloud
+                      .transition()
+                          .duration(600)
+                          .style("font-size", function(d) { return for_size(d.value) + "px"; })
+                          .attr("transform", function(d) {
+                              return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                          })
+                          .style("fill-opacity", 1);
+
+                  //Exiting words
+                  cloud.exit()
+                      .transition()
+                          .duration(200)
+                          .style('fill-opacity', 1e-6)
+                          .attr('font-size', 1)
+                          .remove();
+                }
+                function parseText(t) {
+                      var unicodePunctuationRe = "!-#%-*,-/:;?@\\[-\\]_{}\xa1\xa7\xab\xb6\xb7\xbb\xbf\u037e\u0387\u055a-\u055f\u0589\u058a\u05be\u05c0\u05c3\u05c6\u05f3\u05f4\u0609\u060a\u060c\u060d\u061b\u061e\u061f\u066a-\u066d\u06d4\u0700-\u070d\u07f7-\u07f9\u0830-\u083e\u085e\u0964\u0965\u0970\u0af0\u0df4\u0e4f\u0e5a\u0e5b\u0f04-\u0f12\u0f14\u0f3a-\u0f3d\u0f85\u0fd0-\u0fd4\u0fd9\u0fda\u104a-\u104f\u10fb\u1360-\u1368\u1400\u166d\u166e\u169b\u169c\u16eb-\u16ed\u1735\u1736\u17d4-\u17d6\u17d8-\u17da\u1800-\u180a\u1944\u1945\u1a1e\u1a1f\u1aa0-\u1aa6\u1aa8-\u1aad\u1b5a-\u1b60\u1bfc-\u1bff\u1c3b-\u1c3f\u1c7e\u1c7f\u1cc0-\u1cc7\u1cd3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205e\u207d\u207e\u208d\u208e\u2329\u232a\u2768-\u2775\u27c5\u27c6\u27e6-\u27ef\u2983-\u2998\u29d8-\u29db\u29fc\u29fd\u2cf9-\u2cfc\u2cfe\u2cff\u2d70\u2e00-\u2e2e\u2e30-\u2e3b\u3001-\u3003\u3008-\u3011\u3014-\u301f\u3030\u303d\u30a0\u30fb\ua4fe\ua4ff\ua60d-\ua60f\ua673\ua67e\ua6f2-\ua6f7\ua874-\ua877\ua8ce\ua8cf\ua8f8-\ua8fa\ua92e\ua92f\ua95f\ua9c1-\ua9cd\ua9de\ua9df\uaa5c-\uaa5f\uaade\uaadf\uaaf0\uaaf1\uabeb\ufd3e\ufd3f\ufe10-\ufe19\ufe30-\ufe52\ufe54-\ufe61\ufe63\ufe68\ufe6a\ufe6b\uff01-\uff03\uff05-\uff0a\uff0c-\uff0f\uff1a\uff1b\uff1f\uff20\uff3b-\uff3d\uff3f\uff5b\uff5d\uff5f-\uff65";
+                      var stopWords = /^(i|me|my|myself|we|us|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|whose|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|will|would|should|can|could|ought|i'm|you're|he's|she's|it's|we're|they're|i've|you've|we've|they've|i'd|you'd|he'd|she'd|we'd|they'd|i'll|you'll|he'll|she'll|we'll|they'll|isn't|aren't|wasn't|weren't|hasn't|haven't|hadn't|doesn't|don't|didn't|won't|wouldn't|shan't|shouldn't|can't|cannot|couldn't|mustn't|let's|that's|who's|what's|here's|there's|when's|where's|why's|how's|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|upon|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|say|says|said|shall)$/, punctuation = new RegExp("[" + unicodePunctuationRe + "]", "g"), wordSeparators = /[ \f\n\r\t\v\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000\u3031-\u3035\u309b\u309c\u30a0\u30fc\uff70]+/g, discard = /^(@|https?:|\/\/)/, htmlTags = /(<[^>]*?>|<script.*?<\/script>|<style.*?<\/style>|<head.*?><\/head>)/g, matchTwitter = /^https?:\/\/([^\.]*\.)?twitter\.com/;
+                
+                      var tags = {};
+                      var e = {};
+                      t.split(wordSeparators).forEach(function(t) {
+                          discard.test(t) || ((t = t.replace(punctuation, "")), stopWords.test(t.toLowerCase()) || (t = t.substr(0, 30), e[t.toLowerCase()] = t, tags[t = t.toLowerCase()] = (tags[t] || 0) + 1))
+                      });
+                      tags = d3.entries(tags).sort(function(t, e) {
+                          return e.value - t.value;
+                      }), tags.forEach(function(t) {
+                          t.key = e[t.key];
+                      });
+                      var top_tags = [];
+                      for(var i = 0; i < 30; i++) top_tags[i] = tags[i];
+                      return top_tags;
+                }
+                function getWords(words) {
+                  return words
+                          .replace(/[!\.,:;\?]/g, '')
+                          .split(' ')
+                          .map(function(d) {
+                              return {text: d, size: 10 + Math.random() * 60};
+                          });
+                }
+              });
           });
         }
+        
+        
 
 
         L.geoJSON([freeBus], {
@@ -233,6 +410,7 @@
 
         }).addTo(map);
 
+        
 
     </script>
 </body>
