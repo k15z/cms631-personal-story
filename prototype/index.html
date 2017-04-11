@@ -114,6 +114,15 @@
             border-radius: 10px;
             z-index: 101;
         }
+        
+        .keywords{
+            background: white;
+            padding:3px;
+            width: 100px;
+            word-wrap: normal;
+            font-family: Verdana;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -144,14 +153,14 @@
         var loc = ["Roxbury", "Allston", "Brookline", "Dorchester", "Jamaica Plain", "North End",
         "East Boston", "Fenway", "Roxbury"]
         var people = ["Mash", "Jeffrey", "Jenn", "Marah", "Angela", "Matt", "Victor", "Bree", "Juan"];
-        var keywords = [["parking", "walking", "stops", "butterfly", "line"],
-                        ["phones", "signal", "time", "design", "avenues"],
-                        ["biking", "routes", "streets", "public transportation", "separated"],
-                        ["hours", "reserved spots", "copenhagen", "rhode", "kingston"],
-                        ["biking", "drivers", "lanes", "parking", "cycling"],
-                        ["streets", "hubway bike", "parking", "commute", "cars"],
-                        ["trips", "services", "vans", "improving", "ferries"],
-                        ["bus", "walking", "line", "hill", "option"]];
+        var keywords = [["parking, walking, stops, butterfly, line"],
+                        ["phones, signal, time, design, avenues"],
+                        ["biking, routes, streets, public transportation, separated"],
+                        ["hours, reserved spots, copenhagen, rhode, kingston"],
+                        ["biking, drivers, lanes, parking, cycling"],
+                        ["streets, hubway bike, parking, commute, cars"],
+                        ["trips, services, vans, improving, ferries"],
+                        ["bus, walking, line, hill, option"]];
 
         var vm = new Vue({
             el: "#view",
@@ -181,62 +190,198 @@
             var popupContent = feature.properties.popupContent;
 
           }
-
-          var AllstonIcon = L.icon({
+          switch(feature.properties.popupContent){
+              case "Allston":
+                  var AllstonIcon = L.icon({
         		iconUrl: 'AllstonIcon.jpg',
         		iconSize: [70, 60],
         		iconAnchor: [16, 37],
         		popupAnchor: [0, -28]
-        	});
-
-          var NorthEndIcon = L.icon({
+        	  });
+                  var AllstonText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [100, 54],
+                        iconAnchor: [-54, 37],
+                        html: keywords[loc.indexOf("Allston")]
+                  });
+                  var popup1 = L.marker([42.35969, -71.12841], {icon: AllstonIcon}).addTo(map);
+                  var popup11 = L.marker([42.35969, -71.12841], {icon: AllstonText}).addTo(map);
+                  break;
+              case "North End":
+                  var NorthEndIcon = L.icon({
         		iconUrl: 'NorthEndIcon.jpg',
         		iconSize: [60, 50],
         		iconAnchor: [16, 37],
         		popupAnchor: [0, -28]
-          });
-
-          var BrooklineIcon = L.icon({
-            iconUrl: 'BrooklineIcon.jpg',
-            iconSize: [60, 50],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
+                  });
+                  var NorthEndText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [158, 44],
+                        iconAnchor: [-44, 37],
+                        html: keywords[loc.indexOf("North End")]
+                  });
+                  var popup2 = L.marker([42.365156, -71.054741], {icon: NorthEndIcon}).addTo(map);
+                  var popup22 = L.marker([42.365156, -71.054741], {icon: NorthEndText}).addTo(map);;
+                  break
+              case "Brookline":
+                  var BrooklineIcon = L.icon({
+                    iconUrl: 'BrooklineIcon.jpg',
+                    iconSize: [60, 50],
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -28]
+                  });
+                  var BrooklineText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [186, 44],
+                        iconAnchor: [-44, 37],
+                        html: keywords[loc.indexOf("Brookline")]
+                  });
+                  var popup7 = L.marker([42.3302, -71.1514], {icon: BrooklineIcon}).addTo(map);
+                  var popup77 = L.marker([42.3302, -71.1514], {icon: BrooklineText}).addTo(map);
+                  break;
+              case "Dorchester":
+                  var DorchesterIcon = L.icon({
+                    iconUrl: 'DorchesterIcon.jpg',
+                    iconSize: [75, 65],
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -28]
+                  });
+                  var DorchesterText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [120, 59],
+                        iconAnchor: [-59, 37],
+                        html: keywords[loc.indexOf("Dorchester")]
+                  });
+                  var popup5 = L.marker([42.3011, -71.0743], {icon: DorchesterIcon}).addTo(map);
+                  var popup55 = L.marker([42.3011, -71.0743], {icon: DorchesterText}).addTo(map);
+                  break;
+              case "Jamaica Plain":
+                  var JamaicaIcon = L.icon({
+                    iconUrl: 'JamaicaIcon.jpg',
+                    iconSize: [75, 65],
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -28]
+                  });
+                  var JamaicaText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [100, 59],
+                        iconAnchor: [-59, 37],
+                        html: keywords[loc.indexOf("Jamaica Plain")]
+                  });
+                  var popup4 = L.marker([42.3145, -71.1209], {icon: JamaicaIcon}).addTo(map);
+                  var popup44 = L.marker([42.3145, -71.1209], {icon: JamaicaText}).addTo(map);
+                  break;
+              case "Roxbury":
+                  var RoxburyIcon = L.icon({
+                    iconUrl: 'RoxburyIcon.jpg',
+                    iconSize: [75, 65],
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -28]
+                  });
+                  var RoxburyText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [100, 59],
+                        iconAnchor: [-59, 37],
+                        html: keywords[loc.indexOf("Roxbury")]
+                  });
+                  var popup6 = L.marker([42.3302, -71.0940], {icon: RoxburyIcon}).addTo(map);
+                  var popup66 = L.marker([42.3302, -71.0940], {icon: RoxburyText}).addTo(map);
+                  break;
+              case "East Boston":
+                  var EastBostonIcon = L.icon({
+                    iconUrl: 'EastBostonIcon.jpg',
+                    iconSize: [75, 65],
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -28]
+                  });
+                  var EastBostonText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [103, 59],
+                        iconAnchor: [-59, 37],
+                        html: keywords[loc.indexOf("East Boston")]
+                  });
+                  var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}). addTo(map);
+                  var popup88 = L.marker([42.3794, -71.0248], {icon: EastBostonText}). addTo(map);
+                  break;
+              case "Fenway":
+                  var FenwayIcon = L.icon({
+                    iconUrl: 'FenwayIcon.jpg',
+                    iconSize: [75, 65],
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -28]
+                  });
+                  var FenwayText = L.divIcon({ 
+                        className: "keywords",
+                        iconSize: [100, 59],
+                        iconAnchor: [-59, 37],
+                        html: keywords[loc.indexOf("Fenway")]
+                  });
+                  var popup3 = L.marker([42.3441, -71.0957], {icon: FenwayIcon}).addTo(map);
+                  var popup33 = L.marker([42.3441, -71.0957], {icon: FenwayText}).addTo(map);
+                  break;
+              default:
+                  break;
+          }
+//          var AllstonIcon = L.icon({
+//        		iconUrl: 'AllstonIcon.jpg',
+//        		iconSize: [70, 60],
+//        		iconAnchor: [16, 37],
+//        		popupAnchor: [0, -28]
+//        	});
+//          
+//          var AllstonText = L.divIcon({ 
+//              className: "keywords",
+//              html: keywords[loc.indexOf("Allston")]
+//            });
 //
-          var DorchesterIcon = L.icon({
-            iconUrl: 'DorchesterIcon.jpg',
-            iconSize: [75, 65],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
-
-          var JamaicaIcon = L.icon({
-            iconUrl: 'JamaicaIcon.jpg',
-            iconSize: [75, 65],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
-
-          var RoxburyIcon = L.icon({
-            iconUrl: 'RoxburyIcon.jpg',
-            iconSize: [75, 65],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
-
-          var EastBostonIcon = L.icon({
-            iconUrl: 'EastBostonIcon.jpg',
-            iconSize: [75, 65],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
-
-          var FenwayIcon = L.icon({
-            iconUrl: 'FenwayIcon.jpg',
-            iconSize: [75, 65],
-            iconAnchor: [16, 37],
-            popupAnchor: [0, -28]
-          });
+//          var NorthEndIcon = L.icon({
+//        		iconUrl: 'NorthEndIcon.jpg',
+//        		iconSize: [60, 50],
+//        		iconAnchor: [16, 37],
+//        		popupAnchor: [0, -28]
+//          });
+//
+//          var BrooklineIcon = L.icon({
+//            iconUrl: 'BrooklineIcon.jpg',
+//            iconSize: [60, 50],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+////
+//          var DorchesterIcon = L.icon({
+//            iconUrl: 'DorchesterIcon.jpg',
+//            iconSize: [75, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var JamaicaIcon = L.icon({
+//            iconUrl: 'JamaicaIcon.jpg',
+//            iconSize: [75, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var RoxburyIcon = L.icon({
+//            iconUrl: 'RoxburyIcon.jpg',
+//            iconSize: [75, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var EastBostonIcon = L.icon({
+//            iconUrl: 'EastBostonIcon.jpg',
+//            iconSize: [75, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var FenwayIcon = L.icon({
+//            iconUrl: 'FenwayIcon.jpg',
+//            iconSize: [75, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
 //
 //          var RoxWords= L.icon({
 //            iconUrl: 'roxburywords.png',
@@ -245,20 +390,89 @@
 //            popupAnchor: [0, -28]
 //          });
 
-
+//          var RoxWords= L.icon({
+//            iconUrl: 'roxburywords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var AllstonWords= L.icon({
+//            iconUrl: 'AllstonWords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var FenwayWords= L.icon({
+//            iconUrl: 'FenwayWords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var NothEndWords= L.icon({
+//            iconUrl: 'NorthEndWords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var EastBostonWords= L.icon({
+//            iconUrl: 'EastBostonWords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var BrooklineWords= L.icon({
+//            iconUrl: 'BrooklineWords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var DorchesterWords= L.icon({
+//            iconUrl: 'DorchesterWords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var JamaicaWords= L.icon({
+//            iconUrl: 'JamaicaWords.png',
+//            iconSize: [100, 65],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
+//
+//          var NorthEndWords= L.icon({
+//            iconUrl: 'NorthEndWords.png',
+//            iconSize: [110, 75],
+//            iconAnchor: [16, 37],
+//            popupAnchor: [0, -28]
+//          });
 
 
 //          var popup1 = L.marker([42.35969, -71.12841], {icon: AllstonIcon}).addTo(map);
-//          var popup2 = L.marker([42.365156, -71.054741], {icon: NorthEndIcon}).addTo(map);
-//          var popup3 = L.marker([42.3441, -71.0957], {icon: FenwayIcon}).addTo(map);
-//          var popup4 = L.marker([42.3145, -71.1209], {icon: JamaicaIcon}).addTo(map);
-//          var popup5 = L.marker([42.3011, -71.0743], {icon: DorchesterIcon}).addTo(map);
-//          var popup6 = L.marker([42.3302, -71.0940], {icon: RoxburyIcon}).addTo(map);
-//          var popup61 = L.marker([42.3220, -71.0920], {icon: RoxWords}).addTo(map);
-//          var popup7 = L.marker([42.3302, -71.1514], {icon: BrooklineIcon}).addTo(map);
-//          var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}). addTo(map);
+//          var popup11 = L.marker([42.35969, -71.12841], {icon: AllstonText}).addTo(map);
+////          var popup11 = L.marker([42.3679, -71.12841], {icon: AllstonWords}).addTo(map);;
+//          var popup2 = L.marker([42.365156, -71.054741], {icon: NorthEndIcon}).addTo(map);;
+////          var popup21 = L.marker([42.357156, -71.06], {icon: NorthEndWords}).addTo(map);;
+//          var popup3 = L.marker([42.3441, -71.0957], {icon: FenwayIcon}).addTo(map);;
+////          var popup31 = L.marker([42.3441, -71.115], {icon: FenwayWords}).addTo(map);;
+//          var popup4 = L.marker([42.3145, -71.1209], {icon: JamaicaIcon}).addTo(map);;
+////          var popup41 = L.marker([42.3145, -71.1409], {icon: JamaicaWords}).addTo(map);;
+//          var popup5 = L.marker([42.3011, -71.0743], {icon: DorchesterIcon}).addTo(map);;
+////          var popup51 = L.marker([42.29, -71.0643], {icon: DorchesterWords}).addTo(map);;
+//          var popup6 = L.marker([42.3302, -71.0940], {icon: RoxburyIcon}).addTo(map);;
+////          var popup61 = L.marker([42.3220, -71.0920], {icon: RoxWords}).addTo(map);;
+//          var popup7 = L.marker([42.3302, -71.1514], {icon: BrooklineIcon}).addTo(map);;
+////          var popup71 = L.marker([42.3302, -71.1714], {icon: BrooklineWords}).addTo(map);;
+//          var popup8 = L.marker([42.3794, -71.0248], {icon: EastBostonIcon}). addTo(map);;
+////          var popup81 = L.marker([42.3794, -71.0448], {icon: EastBostonWords}). addTo(map);;
 
-
+           
           layer.bindPopup(popupContent);
           layer.on('click', function(e) {
               vm.cloudy = true;
@@ -399,7 +613,7 @@
         
         
 
-
+        d3.select("iframe").attr("src", "welcome.html");
         L.geoJSON([freeBus], {
 
           style: function (feature) {
